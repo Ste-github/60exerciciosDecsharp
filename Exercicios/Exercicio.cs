@@ -42,6 +42,42 @@ namespace Exercicios
             return num / 2;
         }// fim do metodo
 
+        
+        public double ConverterDolar(double dolar)
+        {
+            if (dolar < 0)
+            {
+                return -1;
+            }
+            else 
+            {
+                return dolar * 5.16;
+            }
+        }// fim do metodo
+        //5.Converta um valor em horas para minutos 
+        public double HorasParaMinutos(double horas)
+        {
+            if (horas <= 0)
+            {
+                return -1;
+            }
+            else
+            {
+                return horas * 60;
+            }
+        }//fim do método
+       //6.
+       public double ConverterPorcentagem(double porcentagem)
+        {
+            return porcentagem *0.10;
+        }//fim do método
+        //7. 
+        public double ConverterParaVinte(double vintecinco)
+        {
+            return vintecinco * 0.25;
+        }// fim do metodo 
+
+
         //8. Calcule a área de um losangulo com base nas diagonais 
         //area = (diagonalMaior * diagonalMenor) / 2
 
@@ -121,6 +157,7 @@ namespace Exercicios
             }
             return resultado;
         }//fim do IMC
+        
 
 
     }//fim da classe 

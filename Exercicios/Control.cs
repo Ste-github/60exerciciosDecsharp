@@ -28,8 +28,12 @@ namespace Exercicios
                               "\n0. Sair" +
                               "\n1. Exercício 1" +
                               "\n2. Exercício 2" +
-                              "\n1. Exercício 8" +
-                              "\n2. Exercício 9" +
+                              "\n3. Exercício 3" + //novo
+                              "\n5. Exercício 5" + //novo
+                              "\n6. Exercício 6" + //novo
+                              "\n7. Exercício 7" + //novo
+                              "\n8. Exercício 8" +
+                              "\n9. Exercício 9" +
                               "\n16. Exercício 16 ");
             ModificarOpcao= Convert.ToInt32(Console.ReadLine());
         }//fim do mostrar menu 
@@ -59,6 +63,41 @@ namespace Exercicios
                         Console.WriteLine(modelo.Metade(num));
                         break;
 
+                    case 3:
+                        Console.WriteLine("Exercício 3");
+                        Console.WriteLine("Informe o valor em Dólar");
+                        double dolar = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(modelo.ConverterParaVinte(dolar));                      
+                        break;
+                    case 5:
+                        Console.WriteLine("Exercício 05");
+                        Console.WriteLine("Informe as horas: ");
+                        double horas = Convert.ToDouble(Console.ReadLine());
+                        double minutos = modelo.HorasParaMinutos(horas);
+                        //Mostar o resultado 
+                        if (minutos  == -1)
+                        {
+                            Console.WriteLine("Número de horas inválidos ");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Essas Horas equivalem a {minutos} minutos.");
+                        }
+                        break;
+
+                    case 6:
+                        Console.WriteLine("Exercício 06");
+                        Console.WriteLine("Informe um número");
+                        double porcentagem = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(modelo.ConverterPorcentagem(porcentagem));
+                        break;
+                    case 7:
+                        Console.WriteLine("Exercício 07");
+                        Console.WriteLine("Informe um número");
+                        double vintecinco = Convert.ToDouble((Console.ReadLine()));
+                        Console.WriteLine(modelo.ConverterParaVinte(vintecinco));
+                        break;
+                        
                     case 8:
                         Console.WriteLine("Exercício 08");
                         Console.WriteLine("Informe a diagonal maior: ");
